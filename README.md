@@ -11,7 +11,7 @@ Your source for Nuxt.js tips
 
 Thank you for wishing to contribute a Nuxt.js tip. Although we appreciate all contributions, we have to follow some guidelines to make sure that each Nuxt tip we add has an as large as possible impact
 
-A message of the day should be linked to a npm package, that can be one of the Nuxt.js core packages ~~or one from the eco-system~~. For the time being we will only accept tips functionalities that almost everybody uses. In general that means either one of the core packages or one of the officially supported Nuxt modules
+A message of the day should be linked to a npm package, that can be one of the Nuxt.js core packages ~~or one from the eco-system~~. For the time being we will only accept tips with regards to functionalities that almost everybody uses. In general that means either one of the core packages or one of the officially supported Nuxt modules
 
 ## How to write a good tip
 
@@ -35,7 +35,7 @@ Examples:
 
 ## Where are these Nuxt tips used?
 
-The Nuxt tips are shown both in the @nuxt/loading-screen as in the banner that is displayed on the @nuxt/cli when running the dev server
+The Nuxt tips are shown both in the [@nuxt/loading-screen](https://github.com/nuxt/loading-screen) as in the banner that is displayed on the [@nuxt/cli](https://github.com/nuxt/nuxt.js/tree/dev/packages/cli) when running the dev server
 
 ## License
 
