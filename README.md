@@ -4,6 +4,7 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Circle CI][circle-ci-src]][circle-ci-href]
 [![Codecov][codecov-src]][codecov-href]
+[![Number of Tips][tips-src]][tips-href]
 
 Your source for Nuxt.js tips
 
@@ -53,3 +54,6 @@ MIT
 
 [codecov-src]: https://img.shields.io/codecov/c/github/@nuxtjs/motd.svg?style=flat-square
 [codecov-href]: https://codecov.io/gh/@nuxtjs/motd
+
+[tips-src]: https://img.shields.io/badge/tips%20count-0-blue
+[tips-href]: https://github.com/@nuxtjs/motd
