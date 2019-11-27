@@ -1,0 +1,73 @@
+version: 2.1
+
+executors:
+  node:
+    parameters:
+      browsers:
+        type: boolean
+        default: false
+    docker:
+      - image: circleci/node:latest<<# parameters.browsers >>-browsers<</ parameters.browsers >>
+    working_directory: ~/project
+    environment:
+      NODE_ENV: test
+
+commands:
+  attach-project:
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+
+jobs:
+  setup:
+    executor: node
+    steps:
+      - checkout
+      - restore_cache:
+          key: yarn-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: NODE_ENV=dev yarn
+      - save_cache:
+          key: yarn-{{ checksum "yarn.lock" }}
+          paths:
+            - "node_modules"
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - node_modules
+
+  lint:
+    executor: node
+    steps:
+      - attach-project
+      - run:
+          name: Lint
+          command: yarn lint
+
+  audit:
+    executor: node
+    steps:
+      - attach-project
+      - run:
+          name: Security Audit
+          command: yarn audit --groups dependencies || true
+
+  test:
+    executor: node
+    steps:
+      - attach-project
+      - run:
+          name: Unit Tests
+          command: yarn test --coverage && yarn coverage
+
+workflows:
+  version : 2
+
+  commit:
+    jobs:
+      - setup
+      - lint:             { requires: [setup] }
+      - audit:            { requires: [setup] }
+      - test:             { requires: [lint] }
