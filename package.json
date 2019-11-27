@@ -1,0 +1,29 @@
+{
+  "name": "@nuxtjs/motd",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "pimlie",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "build": "bili --format cjs,es src/index.js",
+    "lint": "eslint src test",
+    "test": "jest",
+    "validate": "ajv -s node_modules/motd-json/src/schema.json -d"
+  },
+  "dependencies": {
+    "motd-json": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "bili": "^4.8.1",
+    "eslint": "^6.7.1",
+    "jest": "^24.9.0",
+    "jest-json-schema": "^2.1.0",
+    "nuxt": "^2.10.2"
+  }
+}

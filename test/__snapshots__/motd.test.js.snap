@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`motd returns any motd 1`] = `
+Object {
+  "tags": Object {
+    "modules": Array [
+      "buildModule1",
+      "buildModule2",
+      "module1",
+      "module2",
+    ],
+    "version": "wowsie",
+  },
+}
+`;
