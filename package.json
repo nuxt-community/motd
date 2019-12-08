@@ -1,6 +1,8 @@
 {
   "name": "@nuxtjs/motd",
+  "description": "Messages of the day lib for Nuxt.js",
   "version": "0.1.0",
+  "repository": "https://github.com/nuxt-community/motd",
   "main": "dist/index.js",
   "license": "MIT",
   "author": "pimlie",
@@ -16,6 +18,9 @@
     "postrelease": "./scripts/postrelease.sh",
     "test": "jest",
     "validate": "ajv -s node_modules/motd-json/src/schema.json -d src/messages/*.json"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "motd-json": "^0.1.1"
