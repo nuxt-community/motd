@@ -5,6 +5,9 @@
   "license": "MIT",
   "author": "pimlie",
   "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "bili --format cjs,es src/index.js",
     "coverage": "codecov",
