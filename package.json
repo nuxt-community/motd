@@ -9,10 +9,10 @@
     "build": "bili --format cjs,es src/index.js",
     "coverage": "codecov",
     "lint": "eslint src test",
-    "release": "yarn lint && yarn test && yarn standard-version",
+    "release": "yarn lint && yarn test && yarn build && yarn standard-version",
     "postrelease": "./scripts/postrelease.sh",
     "test": "jest",
-    "validate": "ajv -s node_modules/motd-json/src/schema.json -d"
+    "validate": "ajv -s node_modules/motd-json/src/schema.json -d src/messages/*.json"
   },
   "dependencies": {
     "motd-json": "^0.1.1"
@@ -21,6 +21,7 @@
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
     "@nuxtjs/eslint-config": "^2.0.0",
+    "ajv-cli": "^3.0.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "bili": "^4.8.1",
