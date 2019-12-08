@@ -1,5 +1,12 @@
 [
   {
-    "message": "Did you know this?"
+    "message": "The Nuxt.js core team wishes you a Happy New Year!"
+    "periods": [{
+      "from": "0000-12-14",
+      "till": "0000-12-31"
+    }, {
+      "from": "0000-01-01",
+      "till": "0000-01-05"
+    }]
   }
 ]
