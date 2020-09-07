@@ -27,11 +27,10 @@ Examples:
 **Bad**
 - You should use the http module and not axios _(opinon and not clear why)_
 - Double quotes FTW!! _(uses slang)_
--
 
 **Good**
 - Did you know you can use the husky package to run lint automatically when committing on git?
-- Most Nuxt.js projects expose a client-side api through window.$nuxt that can be used for e.g. programmatic navigation: window.$nuxt.$router.push('/my-route')
+- Most Nuxt.js projects expose a client-side api through window.$nuxt that can be used for e.g. programmatic navigation: `window.$nuxt.$router.push('/my-route')`
 
 
 ## Where are these Nuxt tips used?
