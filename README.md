@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![Number of Tips][tips-src]][tips-href]
 
-Your source for Nuxt.js tips
+Your source for Nuxt 2 tips
 
 ## Guidelines for adding a new tip
 
