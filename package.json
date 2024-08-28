@@ -30,7 +30,7 @@
     "@babel/preset-env": "^7.7.6",
     "@nuxtjs/eslint-config": "^2.0.0",
     "ajv-cli": "^3.0.0",
-    "babel-eslint": "^10.0.3",
+    "@babel/eslint-parser": "^7.11.0",
     "babel-jest": "^24.9.0",
     "bili": "^4.8.1",
     "codecov": "^3.6.1",
