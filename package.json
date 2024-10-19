@@ -34,7 +34,7 @@
     "babel-jest": "^24.9.0",
     "bili": "^4.8.1",
     "codecov": "^3.6.1",
-    "eslint": "^6.7.2",
+    "eslint": "^9.13.0",
     "jest": "^24.9.0",
     "jest-json-schema": "^2.1.0",
     "nuxt": "^2.10.2",
