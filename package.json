@@ -26,18 +26,18 @@
     "motd-json": "^0.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
-    "@nuxtjs/eslint-config": "^2.0.0",
-    "ajv-cli": "^3.0.0",
-    "babel-eslint": "^10.0.3",
+    "@babel/core": "^7.25.9",
+    "@babel/preset-env": "^7.25.9",
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "ajv-cli": "^3.3.0",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^24.9.0",
-    "bili": "^4.8.1",
-    "codecov": "^3.6.1",
-    "eslint": "^6.7.2",
+    "bili": "^4.10.1",
+    "codecov": "^3.8.3",
+    "eslint": "^6.8.0",
     "jest": "^24.9.0",
     "jest-json-schema": "^2.1.0",
-    "nuxt": "^2.10.2",
-    "standard-version": "^7.0.1"
+    "nuxt": "^2.18.1",
+    "standard-version": "^7.1.0"
   }
 }
